@@ -37,14 +37,6 @@ final class ShortLinksLog extends Model
 		'user_ip'
 	];
 
-    public function shortinurl(): Attribute
-    {
-        return Attribute::make(
-            get: function (mixed $value, array $attributes)  {
-                return 123;
-            });
-    }
-
 
 	public function user(): BelongsTo
 	{
